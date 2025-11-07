@@ -1,43 +1,38 @@
 {
   "site": {
-    "url": "https://gyoza.lxchapu.com",
-    "title": "Gyoza",
-    "description": "这是一个使用 Astro 和 React 开发的博客主题。",
-    "keywords": "Gyoza,blog,Astro,theme,lxchapu,博客主题",
+    "url": "https://yeww.netlify.app/",
+    "title": "yeweiwei",
+    "description": "这是一个使用 Astro 和 React 开发的个人博客",
+    "keywords": "blog,Astro,theme,yeweiwei,博客主题",
     "lang": "zh-CN",
     "favicon": "/favicon.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
-    "name": "lxchapu",
-    "twitterId": "@lxchapu",
-    "avatar": "https://s2.loli.net/2024/04/30/ozsnuS5Ihf3xMBG.webp"
+    "name": "yeweirui",
+    "twitterId": "",
+    "avatar": "https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/3f869b286dc148d2875132201b445c69~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6YeO6JGz6JWk:q75.awebp?rk3s=f64ab15b&x-expires=1763098332&x-signature=TkaPpukoAwzSv2oHQwfvZW29co4%3D"
   },
   "hero": {
-    "name": "Gyoza",
-    "bio": "A static blog template build with Astro and React.",
-    "description": "Clean, Cute, Fast.",
+    "name": "Ye WeiRui",
+    "bio": "a web developer who loves to code and build things.",
+    "description": "interested in web development, share my thoughts and experiences.",
     "socials": [
       {
         "name": "Github",
         "icon": "icon-github",
-        "url": "https://github.com/lxchapu/astro-gyoza",
+        "url": "https://github.com/wwweirui",
         "color": "rgb(24, 23, 23)"
       },
-      {
-        "name": "X",
-        "icon": "icon-x",
-        "url": "https://twitter.com/lxchapu",
-        "color": "rgb(36, 46, 54)"
-      },
+
       {
         "name": "Email",
         "icon": "icon-mail",
-        "url": "mailto:lxchapu@outlook.com",
+        "url": "1207536154@qq.com",
         "color": "rgb(212, 70, 56)"
       }
     ],
-    "yiyan": "当第一颗卫星飞向大气层外，我们便以为自己终有一日会征服宇宙。"
+    "yiyan": "保持对未知的好奇，是一种智慧的表现。"
   },
   "color": {
     "accent": [
@@ -76,32 +71,27 @@
       "icon": "icon-archive"
     },
     {
-      "name": "项目",
-      "link": "/projects",
-      "icon": "icon-flask"
-    },
-    {
       "name": "关于",
       "link": "/about",
       "icon": "icon-ghost"
     },
     {
-      "name": "友链",
+      "name": "图片集",
       "link": "/friends",
-      "icon": "icon-hearts"
+      "icon": "icon-computer"
     }
   ],
   "posts": {
-    "perPage": 10
+    "perPage": 15
   },
   "footer": {
-    "startTime": "2024-04-14T00:00:00Z"
+    "startTime": "2025-11-07T00:00:00Z"
   },
   "waline": {
     "serverURL": "https://waline.lxchapu.com"
   },
   "sponsor": {
-    "wechat": "https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp"
+    "wechat": ""
   },
   "analytics": {
     "enable": false,
