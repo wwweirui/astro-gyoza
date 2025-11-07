@@ -6,7 +6,7 @@
     "keywords": "blog,Astro,theme,yeweiwei,博客主题",
     "lang": "zh-CN",
     "favicon": "/favicon.ico",
-    "appleTouchIcon": "/apple-touch-icon.png"
+    "appleTouchIcon": ""
   },
   "author": {
     "name": "yeweirui",
