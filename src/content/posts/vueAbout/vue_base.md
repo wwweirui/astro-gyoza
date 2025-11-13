@@ -8,6 +8,51 @@ tags: [Vue]
 comments: false
 ---
 
+## 设计逻辑
+
+“分层解耦、渐进式增强”
+
+围绕“数据响应式”和“虚拟DOM”，两大核心，拆分为多个指责明确的模块
+
+> 基础层
+
+提供底层工具、常量、类型定义：工具函数（utils）、常量（constants）
+
+职责：提供全源码复用的工具函数、常量定义、类型声明，是所有模块的基础。
+
+核心逻辑：抽象通用能力，避免重复代码，保证源码一致性。
+
+> 核心层 响应式系统（Reactivity）
+>
+> > 职责：实现 “数据变化→自动更新视图”，是 Vue 的灵魂模块，不依赖任何其他核心模块（可独立使用）
+
+数据响应式、虚拟DOM、组件基础能力：响应式系统（reactivity）、VNode、组件系统
+
+关键文件（Vue3）：packages/reactivity/
+核心 API：reactive.ts（代理对象）、ref.ts（基础类型响应式）、computed.ts（计算属性）、effect.ts（副作用函数）。
+辅助逻辑：track.ts（依赖收集）、trigger.ts（触发更新）、baseHandlers.ts（Proxy 拦截器）。
+
+- 代理拦截
+- 依赖收集
+- 触发更新
+
+虚拟 DOM（Virtual DOM）
+
+职责：用 JavaScript 对象描述 DOM 结构（VNode），提供 “虚拟 DOM→真实 DOM” 的转换逻辑，是跨平台渲染的基础。
+
+- 关键文件（Vue3）：packages/runtime-core/
+  - VNode 创建：vnode.ts（createVNode 函数，生成 VNode 对象，包含 type、props、children 等属性）。
+  - 虚拟 DOM 操作：patch.ts（核心！对比新旧 VNode，计算最小更新差异，映射到真实 DOM 操作）。
+  - 辅助逻辑：shapeFlags.ts（VNode 类型标记，优化 patch 逻辑）、h.ts（h 函数，简化 VNode 创建）。
+
+> 应用层
+
+应用初始化、全局API、生命周期管理：应用实例（App）、全局API、生命周期钩子
+
+> 编译层
+
+模版 -> 渲染函数（编译时/运行时）：模板解析（parse）、转换（transform）、生成（generate）
+
 ## proxy 高级应用场景
 
 ### 响应式数据（Vue3 核心原理）
